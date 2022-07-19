@@ -1,0 +1,45 @@
+/* ----------------------- CORPO DO SITE ----------------*/
+video{
+    transition: all 500ms;
+    margin: 0 auto;
+    margin-top: 2rem; 
+    margin-bottom: 2rem;
+    cursor: pointer;
+    padding: -2px;
+    border: 12px solid rgb(58, 20, 66)
+}
+video:hover{
+    border:14px solid rgb(66, 22, 75)
+}
+#canal{
+    display: inline-block;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 1rem;
+    font-size: medium;
+    padding: 10px;
+}
+#canal img{
+    height: 50px;
+}
+#canal:hover{
+    font-size: large;  
+    padding: 5px;  
+    transition: all 500ms;
+}
+/* ----------------------- RODAPE -----------------------*/
+/*---------------------- MEDIA QUERY --------------------*/
+@media (max-width: 360px){
+    video{
+        height: 500px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    iframe{
+        object-fit: none;
+        margin: 0 auto;
+        margin-top: 1rem;
+        width: 90%;
+   }
+}

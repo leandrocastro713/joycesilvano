@@ -1,0 +1,239 @@
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 
+               'Trebuchet MS', sans-serif;
+  color: rgb(142, 217, 232);
+  background-color: rgb(68, 43, 92);
+  text-align: center;
+  align-items: center;
+}
+h1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h4 {
+  margin-top: -25px;
+  font-weight: 100;
+  font-family: cursive;
+}
+/* ------------------------ CABEÇALHO -------------------*/
+.bkgsuperior{
+  height: 6rem;
+  background-image: url("../imagens/bkg1.png");
+  background-blend-mode: multiply;
+  background-clip: padding-box;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: rgb(130, 68, 170);
+  border-radius: 0px 0px 40px 40px;
+  box-shadow: 2px 4px rgba(0,0,0,0.2);
+  margin-top: -20px;
+  text-align: center;
+
+}
+.cabecalho {
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  color: rgb(255, 255, 255);
+}
+.cabecalho .titulo{
+  width: 180;
+  margin-left: 1rem;
+  display:block;
+  float: left; 
+  text-align: left;
+}
+.titulo h4{
+  text-align: right;
+}
+.cabecalho .social{
+  width: 146px;
+  align-items: center;
+  align-items: right;
+  display: block;
+  float: right;    
+  margin-top: 30px;
+}
+.cabecalho .social img{
+  height: 40px;
+  padding-left: 4px;
+}
+.cabecalho .social img:hover{
+  transition: all 1s;
+  height: 43px;
+}
+/* --------------------- BARRA DE MENU ------------------*/
+#barra-de-menu {  
+  margin-top: 10px;
+  display: block;
+  background-color: rgb(75, 36, 108);
+  border-radius: 10px 40px;
+  box-shadow: 2px 4px rgba(0,0,0,0.2);
+  padding: 10px;
+  text-align: center;
+  color: aquamarine;;
+}
+#barra-de-menu ul {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+#barra-de-menu li {
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: larger;
+  font-family: cursive;
+  display: inline-block;
+}
+#barra-de-menu:hover {
+  transition: all 1000ms;
+  background-image: url("../imagens/bkg2.png");
+  background-blend-mode: multiply;
+  background-clip: padding-box;
+  background-color: rgb(104, 58, 141);
+}
+#barra-de-menu a{
+  transition: all 1000ms;
+  padding: 4px 10px;
+  color: aquamarine;
+  text-decoration: none;
+}
+#barra-de-menu a:hover{
+  padding: 4px 20px;
+  background-color: aquamarine;
+  border: 2px solid rgb(56, 26, 56);
+  color: rgb(42, 42, 42);
+  border-radius: 6px;
+}
+.atual{
+  cursor: default;
+  background-color: none;
+  color: rgb(165, 163, 163);
+}
+.atual:hover{
+  background-color: none;
+}
+/*--------------------------- RODAPE -------------------------*/
+
+.rodape{
+  border-top: 1px dotted gray;
+  display: block;
+  padding: 20px 40px;
+  margin-bottom: -10px;
+  font-family: "gotham";
+  color:rgb(177, 176, 176);
+  font-size: larger;
+  font-style: italic;
+  background-color: rgb(101, 33, 166);
+}
+.rodape a{
+  color: aquamarine;
+  text-decoration: none;
+  background-color: rgb(101, 33, 166);
+}
+.rodape a:hover{
+  padding: 0;
+  border: none;
+  text-decoration: underline;
+}
+/*---------------------- MEDIA QUERY --------------------*/
+@media (max-width: 850px){
+  .cabecalho {
+      width: 95%;
+  }
+  .cabecalho .titulo{
+      width: 190px;
+      margin-left: 4px;
+  }
+  #barra-de-menu ul {
+      display: inline-block;
+      text-align: center;
+      margin: 4;
+  }
+  #barra-de-menu a{
+      padding: 4px 20px;
+      color: aquamarine;
+      text-decoration: underline;
+  }
+  #barra-de-menu a:hover{
+      padding: 4px 20px;
+      background-color: aquamarine;
+      border: 2px solid rgb(56, 26, 56);
+      color: rgb(56, 26, 56);
+      border-radius: 6px;
+  }
+  .cabecalho .social{
+      width: 120px;
+      margin-top: 40px;
+  }
+  .cabecalho .social img{
+      height: 30px;
+      padding-left: 4px;
+  }
+  .cabecalho .social img:hover{
+      transition: all 1s;
+      height: 32px;
+  }
+}
+@media (max-width: 470px){
+  #barra-de-menu{
+      padding: 20px;
+  }
+  .rodape{
+      float: none;
+      display: block;
+      position: relative;
+      margin: 0 auto;
+      align-items: center;
+      width: 80%; 
+ } 
+  .cabecalho .social img:hover{
+      height: 33px;
+  }
+}
+@media (max-width: 320px){
+  .bkgsuperior{
+      height: 8rem;
+      display: block;
+  }
+  .titulo{
+      height: 3rem;
+  }
+  .titulo h1{
+      font-size: 28px;
+      float: none;
+  }
+  .cabecalho h4{
+      height: 12px; 
+      margin-bottom: 0px;
+  }
+  .social{
+      display: block;
+      margin: 0 auto;
+      height: 30px;
+      margin-top: 60px;
+      float:none;
+  }
+  #barra-de-menu{
+      display: block;
+      float: none;
+      padding: 0;
+      margin: 0;
+      margin-top: 1rem;
+  }
+  #barra-de-menu #menu{
+      display: block;
+      width: 90%;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 1rem;
+      padding: 1rem;;
+  }
+  #barra-de-menu li{
+    display: block;
+  }
+ .rodape{
+      width: 72%;
+  }
+}

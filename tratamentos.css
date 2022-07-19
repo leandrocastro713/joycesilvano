@@ -1,0 +1,102 @@
+/* ----------------------- CORPO DO SITE ----------------*/
+.textos1{
+    font-family: cursive;
+    font-size: larger;
+    text-decoration: underline;
+    margin-top: 4vh;
+}
+.parte2 { 
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: block;
+    position: relative;
+    color: aquamarine;
+    align-items: center;
+    width: 95%;
+    padding-top: 1rem;
+}
+.bloquinho{
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('../imagens/bkg2.png');
+    font-size: 20px;
+    background-color: rgb(81, 36, 122);
+    background-blend-mode: multiply;
+    align-items: center;
+    font-size: large;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    max-width: 570px;
+    padding: 1rem;
+    border: 2px dotted white;
+    border-radius: 15px;
+}
+.esquerda, .direita{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin-left: 1rem;
+}
+.corpo .textos1{
+    text-decoration: underline;
+    text-align: left;   
+    font-size: 28px;
+}
+/*---------------------- MEDIA QUERY --------------------*/
+@media (max-width: 850px){
+    .corpo{
+        margin-left: 1rem;
+    }
+    .corpo .textos {
+        margin-top: 0px;
+        text-align: center;
+        margin-bottom: 6px;
+    }
+    .corpo .textos1 {
+        margin-top: 7px;    
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width: 470px){
+   .textos{
+       margin-bottom: 1rem;
+   }
+    .textos1{
+        margin: 2rem auto 1rem auto;
+        width: 80%;
+    }
+    .textos{
+        display: block;
+        float: none;
+    }
+    .bloquinho{
+        display: block;
+    }
+    .esquerda, .direita{
+        padding-top: 1rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+    p{
+        width: 100%;
+    }
+}
+@media (max-width: 360px){
+    .textos1{
+        display: block;
+        margin: 1.5rem auto 1rem auto;
+        padding: 0px;
+        float: none;
+        width: 80%;
+    }
+    .parte2{
+        margin-top: 0rem;
+        width: 100%;
+    }
+    .bloquinho{
+        width: 95%;
+        margin-top: 6px;
+        padding: 8px;
+    }
+}

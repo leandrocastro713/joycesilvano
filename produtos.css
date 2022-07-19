@@ -1,0 +1,134 @@
+/* ----------------------- CORPO DO SITE ----------------*/
+.textos1{
+    font-family: cursive;
+    font-size: larger;
+    text-decoration: underline;
+    margin-top: 4vh;
+}
+.parte1 { 
+    margin: 0 auto;
+    margin-top: 4px;
+    display: flex;
+    position: relative;
+    color: aquamarine;
+    width: 100%;
+    background-image: url('imagens/fundo-papel.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: none;
+    background-blend-mode: multiply;
+    
+    align-items: center;
+}
+.tb-produtos{
+    margin: 0 auto;
+    padding: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.tb-produtos img{
+    width: 300px;
+}
+.produto{
+    padding: 1rem;
+    border: 1px dotted gray;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.produto:hover {
+    transition: ease-out 500ms;
+    background-color: rgb(126, 106, 124);
+}
+.produto a{
+    color: white;
+}
+.produto a:hover{
+    transition: ease-in-out 500ms;
+    color:rgb(33, 33, 31);
+}
+/*---------------------- MEDIA QUERY --------------------*/
+@media (max-width: 850px){
+    .tb-produtos{
+        display: flex;
+        position: relative;
+        align-content: center;
+        max-width: 600px;
+        flex-wrap: wrap;
+    }
+    .tb-produtos a{
+        color: white;
+    }
+    .produto{
+        display: block;
+        border-radius: 8px;
+    }
+    .parte1{
+        position: relative;
+        display: flex;
+        min-width: 400px;
+    }
+}
+@media (max-width: 470px){
+    .parte1{
+        display: block;
+        float: none;
+        position: relative;
+    }
+   .textos{
+       margin-bottom: 1rem;
+   }
+    .textos1{
+        margin: 2rem auto 1rem auto;
+        width: 80%;
+    }
+    .textos{
+        display: block;
+        float: none;
+    }
+    .produto{
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+    .tb-produtos{
+        width: 100%;
+        margin: 0 0 0 -1rem;
+        text-align: center;
+        padding: 1rem;
+    }
+    .produto a img{
+        width: 250px;
+    }
+}
+@media (max-width: 320px){
+    .titulo{
+        height: 3rem;
+    }
+    .titulo h1{
+        font-size: 28px;
+        float: none;
+    }
+    .parte1{
+        display: contents;
+        width: 90%;
+        padding: 0px;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .textos1{
+        display: block;
+        margin: 1.5rem auto 1rem auto;
+        padding: 0px;
+        float: none;
+        width: 80%;
+    }
+    .tb-produtos{
+       width: 98%; 
+    }
+}

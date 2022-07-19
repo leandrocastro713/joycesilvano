@@ -1,0 +1,48 @@
+/* ----------------------- CORPO DO SITE ----------------*/
+.bloco{
+    display:block;
+    justify-content: center;
+    border: 1px dotted gray;
+    border-radius: 5px;
+    padding: 5px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+.facebook span, .instagram span, .whatsapp span {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding: 8px;
+    color: white;
+    background-color: rgba(0,0,0,.4);
+}
+.whatsapp img{
+    position:relative;
+    align-items: center;
+    margin: 0 auto;
+}
+.facebook, .instagram, .whatsapp{
+    overflow: hidden;
+}
+/*---------------------- MEDIA QUERY --------------------*/
+@media (max-width: 500px){
+    .grid{
+        max-width: 480px;
+        min-width: 320px;
+        grid-template-columns: 1fr;
+    }
+    .grande{
+        width: 98%;
+    }
+    .miniaturas{
+        width: 100%;
+    }
+}
+@media (max-width: 360px){
+    .whatsapp img{
+        left: -40px;
+    }
+}

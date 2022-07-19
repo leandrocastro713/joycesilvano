@@ -1,0 +1,27 @@
+/* ----------------------- CORPO DO SITE ----------------*/
+.container{
+  margin: 0 auto;
+  width: 80%;
+  font-size: large;
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+#texto{
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container img{
+  float: left;
+  width: 250px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+/*---------------------- MEDIA QUERY --------------------*/
+@media (max-width: 360px){
+.container{
+    width: 90%;
+  }
+  #texto{
+    text-align: left;
+  }
+}
