@@ -1,0 +1,117 @@
+/* ----------------------- CORPO DO SITE ----------------*/
+.grid{
+    display:grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    font-family: fonteH4;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 95%;
+    overflow: hidden;
+}
+.principal{
+    display: block;
+    position: relative;
+    justify-content: center;
+    margin: 0 auto;
+    width: 400px;
+
+}
+.sidebar{
+    margin: 0 auto;
+    width: 180px;
+    width: 95%;
+}
+.quem{
+    font-size: large;
+    font-weight: bolder;
+    margin-bottom: -10px;
+}
+.facebook{
+    margin-top: -18px;
+    padding-top: -10px;
+}
+.facebook span, .instagram span, .whatsapp span {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding: 8px;
+    color: white;
+    background-color: rgba(0,0,0,.4);
+}
+.whatsapp img{
+    position:relative;
+    align-items: center;
+    margin: 0 auto;
+}
+.facebook, .instagram, .whatsapp{
+    overflow: hidden;
+}
+video{
+    transition: all 500ms;
+    margin: 0 auto;
+    margin-top: 2rem; 
+    margin-bottom: 2rem;
+    cursor: pointer;
+    padding: 0px;
+    border: 12px solid rgb(58, 20, 66)
+}
+video:hover{
+    border:12px solid rgb(127, 116, 130)
+}
+#canal{
+    display: inline-block;
+    font-family: fonteH4;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 1rem;
+    font-size: medium;
+    padding: 10px;
+}
+#canal img{
+    height: 50px;
+}
+#canal:hover{
+    font-size: large;  
+    padding: 5px;  
+    transition: all 500ms;
+}
+
+/*---------------------- MEDIA QUERY --------------------*/
+@media (max-width: 800px){
+    .grid{
+        grid-template-columns: 1fr 1fr;
+        width: 95%;
+    }
+    .video{
+        height: 500px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    iframe{
+        object-fit: none;
+        margin: 0 auto;
+        margin-top: 1rem;
+        width: 90%;
+   }
+}
+@media (max-width: 700px){
+    .grid{
+        grid-template-columns: 1fr;
+    }
+    video{
+        border: none;
+        margin: 0 auto;
+        margin-top: 2rem; 
+        margin-bottom: 2rem;
+    }
+    video:hover{
+        border: none;
+    }
+    
+}

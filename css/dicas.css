@@ -1,0 +1,21 @@
+/* @font-face {
+  font-family: 'fonteH4' ;
+  src: url("../fonts/quanton.otf");
+} */
+
+/* ----------------------- CORPO DO SITE ----------------*/
+main{
+  margin: 2rem auto;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 98%;
+}
+#zoiudo{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+/*---------------------- MEDIA QUERY --------------------*/
+@media (max-width: 320px){
+}

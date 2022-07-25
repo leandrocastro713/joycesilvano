@@ -1,0 +1,110 @@
+/* ----------------------- CORPO DO SITE ----------------*/
+.grid{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 1px dotted gray;
+    border-radius: 5px;
+    padding: 15px;
+    max-width: 1200px;
+    min-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+.imagem{
+    transition: all 500ms;
+    width: 80px;
+    height: 80px;
+    padding: 0px;
+    margin: 6px;
+    cursor: pointer;
+}
+.imagem:hover{
+    transition: ease-in-out 200ms;
+    transform: scale(1.1);
+    filter: sepia(50);
+    width: 100px;
+    height: 100px;
+    margin: -5px;
+}
+#modal_img{
+    float: none;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    width: 75vh;
+}
+.modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    left: 0;
+    top: 0;
+    align-content: center;
+    align-items: center;
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 3;
+}
+.modal_content{
+    transition: all 1s;
+    display:block;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.modal_active{
+    transition: ease-in-out 500ms;
+    opacity: 1;
+    visibility: visible;
+    align-items: center;
+}
+#bt_close{
+    position: absolute;
+    color: white;
+    right: 40px;
+    top: 10px;
+    background-color: black;
+    font-size: large;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid white;
+}
+#bt_close:hover{
+    background-color: rgb(198, 80, 80);
+}
+.titulo2{
+    font-family: fonteH4;
+    font-size: 19px;
+    font-weight: bold;
+}
+/*---------------------- MEDIA QUERY --------------------*/
+@media (max-width: 500px){
+    .grid{
+        max-width: 480px;
+        min-width: 320px;
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 320px){
+    .titulo2{
+        font-size: 20px;
+    }
+    #modal_img{
+        width: 98%;
+        vertical-align: center;
+    }
+    #bt_close{
+        right: 15px;
+    }
+    .grid{
+        border: none;
+        padding: 0px;
+        width: 90%;
+        grid-gap: 6px;
+        margin-left: -10px;
+        padding: 0px;
+    }
+}
