@@ -1,0 +1,125 @@
+/* ----------------------- CORPO DO SITE ----------------*/
+p{
+    font-size: 18px;
+}
+.corpo { 
+    font-family: fonteH4;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+    color: rgb(8, 35, 35);
+    width: 90vw;
+    align-items: flex-start;
+}
+hr{
+    color:2px solid rgba(35, 35, 37, 0.799);
+}
+.coluna-esquerda{
+    margin: 1rem;
+    margin: 0;
+    padding-right: 1rem;
+    border-right: 2px solid rgba(61, 61, 63, 0.799);
+    text-align: justify;
+}
+.coluna-direita{
+    margin: 1rem;
+    margin-top: 0;
+    margin-left: 0px;
+    text-align: justify;
+}
+.artigo{
+    display: block;
+    position: relative;
+    float: none;
+    text-align: center;
+    justify-content: center;
+}
+.artigo p{
+    text-align: justify;
+}
+.artigo h2{
+    font-size: 19px;
+    margin-bottom: 0px;
+    text-align: left;
+}
+.imagem1{
+    height: 220px;
+    margin-right: 2rem;
+    margin-left: 1rem;
+    filter: invert(.9);
+}
+.ilustrativo{
+    display: flex;
+    align-items: center;
+}
+.ilustrativo p{
+    font-size: 18px;
+}
+.subartigo{
+    display: block;
+    float: none;
+    position: relative;
+    justify-content: center;
+}
+.centro{
+    display: inline-block;
+    justify-content: center;
+}
+.centro2{
+    display: inline-flex;
+    width: 90%;
+    justify-content: center;
+}
+.textoEsquerda{
+    justify-content: left;
+    text-align: right;
+}
+.imagem1{
+    filter: invert(.9);
+}
+.imagem2{
+    height: 220px;
+    margin-right: 2rem;
+    margin-left: 1rem;
+
+    transform: scale(1.4);
+    margin: 2rem;
+}
+/*---------------------- MEDIA QUERY --------------------*/
+@media (max-width: 730px){
+    .corpo{
+        display: block;
+    }
+    .coluna-direita, .coluna-esquerda{
+        margin: 0 auto;
+        padding: 0;
+        border: none;
+    }
+    .coluna-esquerda{
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid gray;
+    }
+}
+@media (max-width: 320px){
+    .subartigo{
+        margin: 0px;
+        padding: 0px;
+    }
+    .imagem2{
+        width: 50vh;
+    }
+    .centro2{
+        width: 80%;
+    }
+    .textoEsquerda{
+        text-align: left;
+    }
+    .coluna-direita{
+        margin-bottom: 2rem;
+    }
+}
