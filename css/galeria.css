@@ -33,7 +33,7 @@
     position: relative;
     text-align: center;
     align-items: center;
-    width: 75vh;
+    height: 100%;
 }
 .modal{
     width: 100vw;
@@ -50,8 +50,9 @@
 }
 .modal_content{
     transition: all 1s;
-    display:block;
+    display: block;
     position: relative;
+    width: 100%; height: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -93,8 +94,8 @@
         font-size: 20px;
     }
     #modal_img{
-        width: 98%;
-        vertical-align: center;
+        width: 98%;  
+        height: auto;
     }
     #bt_close{
         right: 15px;

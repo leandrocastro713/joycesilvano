@@ -13,6 +13,10 @@
     width: 95%;
     overflow: hidden;
 }
+.grid img:hover{
+    transition: ease-in-out 300ms;
+    transform: scale(1.06);
+}
 .principal{
     display: block;
     position: relative;
@@ -83,35 +87,28 @@ video:hover{
 }
 
 /*---------------------- MEDIA QUERY --------------------*/
-@media (max-width: 800px){
+@media (max-width: 815px){
     .grid{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         width: 95%;
     }
     .video{
         height: 500px;
         margin-top: 1rem;
         margin-bottom: 1rem;
+        border: none;
+        margin: 0 auto;
+        margin-top: 2rem; 
+        margin-bottom: 2rem;
+    }
+    .video:hover{
+        border: none;
     }
     iframe{
         object-fit: none;
         margin: 0 auto;
         margin-top: 1rem;
         width: 90%;
-   }
-}
-@media (max-width: 700px){
-    .grid{
-        grid-template-columns: 1fr;
     }
-    video{
-        border: none;
-        margin: 0 auto;
-        margin-top: 2rem; 
-        margin-bottom: 2rem;
-    }
-    video:hover{
-        border: none;
-    }
-    
+
 }
