@@ -14,8 +14,8 @@
 }
 .imagem{
     transition: all 500ms;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     padding: 0px;
     margin: 6px;
     cursor: pointer;
@@ -24,8 +24,8 @@
     transition: ease-in-out 200ms;
     transform: scale(1.1);
     filter: sepia(50);
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     margin: -5px;
 }
 #modal_img{
