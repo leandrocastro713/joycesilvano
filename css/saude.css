@@ -1,4 +1,7 @@
 /* ----------------------- CORPO DO SITE ----------------*/
+body{
+    overflow: hidden;
+}
 .textos1{
     font-family: fonteH4;
     font-size: larger;
@@ -10,6 +13,7 @@
 .main { 
     margin: 0 auto;
     margin-top: 2rem;
+    overflow: hidden;
     display: grid;
     grid-template-columns: 120px 1fr;
     position: relative;
@@ -17,6 +21,10 @@
     align-items: center;
     width: 90%;
     padding-top: 1rem;
+}
+.tratamentos{
+    margin-bottom: 15px;
+    padding: 5px;
 }
 .parte1{
     width: 100%; height: 100%;
@@ -49,9 +57,10 @@
     font-size: large;
     margin: 0 auto;
     margin-bottom: 2rem;
+    margin-left: 15px;
     max-width: 570px;
     padding: 1rem;
-    border-bottom: 2px dotted rgb(24, 67, 44);
+    border: 2px dotted rgb(24, 67, 44);
     border-radius: 15px;
 }
 .esquerda, .direita{
@@ -107,6 +116,8 @@
     margin: 0 auto;
     font-family: fonteH4;
     font-size: 46px;
+    margin-bottom: 1rem;
+
 }
 
 .esquerda{
@@ -159,18 +170,18 @@ summary{
     }
     .main{
         grid-template-columns: 1fr;
-        width: 98%;
+        width: 90%;
     }
     .bloquinho{
         display: block;
         position: relative;
-        width: 98%;
+        width: 90%;
         border: none;
         display: block;
     }
     .esquerda, .direita{
         padding-top: 1rem;
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
     }
     p{
@@ -186,16 +197,12 @@ summary{
         margin: 1.5rem auto 1rem auto;
         padding: 0px;
         float: none;
-        width: 95%;
-    }
-    body{
-        margin: 0;
-        padding: 0;
-    }
+        width: 90%;
+    } 
     .parte2{
         margin-top: 0rem;
         display: block;
-        width: 95%;
+        width: 90%;
         margin: 0 auto;
     }
     .separador{
@@ -204,7 +211,7 @@ summary{
         font-size: 46px;
     }
     .bloquinho{
-        width: 95%;
+        width: 90%;
         margin: 2rem auto 3rem;
         padding: 8px;
     }
@@ -215,4 +222,5 @@ summary{
         border-bottom: 2px dotted rgb(24, 67, 44);
 
     }
+    
 }

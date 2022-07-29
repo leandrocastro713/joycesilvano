@@ -19,6 +19,7 @@ hr{
     color:2px solid rgba(35, 35, 37, 0.799);
 }
 .coluna-esquerda{
+    overflow: hidden;
     margin: 1rem;
     margin: 0;
     padding-right: 1rem;
@@ -26,6 +27,7 @@ hr{
     text-align: justify;
 }
 .coluna-direita{
+    overflow: hidden;
     margin: 1rem;
     margin-top: 0;
     margin-left: 0px;
@@ -85,7 +87,6 @@ hr{
     height: 220px;
     margin-right: 2rem;
     margin-left: 1rem;
-
     transform: scale(1.4);
     margin: 2rem;
 }
@@ -111,7 +112,10 @@ hr{
         padding: 0px;
     }
     .imagem2{
-        width: 50vh;
+        width: 300px;
+        /* height: 300px; */
+        resize: vertical;
+
     }
     .centro2{
         width: 80%;
