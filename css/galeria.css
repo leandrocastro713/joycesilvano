@@ -89,12 +89,12 @@
         grid-template-columns: 1fr;
     }
 }
-@media (max-width: 320px){
+@media (max-width: 470px){
     .titulo2{
         font-size: 20px;
     }
     #modal_img{
-        width: 98%;  
+        width: 98vw;  
         height: auto;
     }
     #bt_close{
