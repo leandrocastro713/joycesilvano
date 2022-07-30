@@ -1,7 +1,5 @@
 /* ----------------------- CORPO DO SITE ----------------*/
-body{
-    overflow: hidden;
-}
+
 .textos1{
     font-family: fonteH4;
     font-size: larger;
@@ -48,19 +46,18 @@ body{
 }
 .bloquinho{
     display: flex;
+    position: relative;
     font-family: fonteH4;
     /* background-image: url('../imagens/bkg2.png'); */
     font-size: 19px;
     /* background-color: rgb(81, 36, 122); */
     background-blend-mode: multiply;
-    align-items: center;
     font-size: large;
     margin: 0 auto;
     margin-bottom: 2rem;
-    margin-left: 15px;
     max-width: 570px;
     padding: 1rem;
-    border: 2px dotted rgb(24, 67, 44);
+    border: 2px dotted rgb(38, 42, 40);
     border-radius: 15px;
 }
 .esquerda, .direita{
@@ -162,7 +159,7 @@ summary{
 @media (max-width: 550px){
     .textos1{
         margin: 2rem auto 1rem auto;
-        width: 80%;
+        width: 100%;
     }
     .textos{
         display: block;
@@ -170,19 +167,20 @@ summary{
     }
     .main{
         grid-template-columns: 1fr;
-        width: 90%;
+        width: 95%;
     }
     .bloquinho{
         display: block;
         position: relative;
-        width: 90%;
+        width: 100%;
         border: none;
         display: block;
     }
     .esquerda, .direita{
         padding-top: 1rem;
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
+        float: none;
     }
     p{
         width: 100%;
@@ -197,12 +195,12 @@ summary{
         margin: 1.5rem auto 1rem auto;
         padding: 0px;
         float: none;
-        width: 90%;
+        width: 100%;
     } 
     .parte2{
         margin-top: 0rem;
         display: block;
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
     }
     .separador{
@@ -211,7 +209,7 @@ summary{
         font-size: 46px;
     }
     .bloquinho{
-        width: 90%;
+        width: 100%;
         margin: 2rem auto 3rem;
         padding: 8px;
     }

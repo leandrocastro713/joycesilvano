@@ -89,12 +89,12 @@
         grid-template-columns: 1fr;
     }
 }
-@media (max-width: 470px){
+@media (max-width: 370px){
     .titulo2{
         font-size: 20px;
     }
     #modal_img{
-        width: 98vw;  
+        width: 98%;  
         height: auto;
     }
     #bt_close{
@@ -104,8 +104,6 @@
         border: none;
         padding: 0px;
         width: 90%;
-        grid-gap: 6px;
-        margin-left: -10px;
-        padding: 0px;
+        margin: 0 auto;
     }
 }

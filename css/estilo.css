@@ -58,13 +58,14 @@ h4 {
   text-align: right;
   margin-top: -40px;
 }
-.cabecalho .social{
+.social{
   width: 146px;
   align-items: center;
   align-items: right;
   display: block;
   float: right;    
-  margin-top: 30px;
+  position: relative;
+  margin-top: 35px;
 }
 .cabecalho .social img{
   height: 40px;
@@ -72,7 +73,7 @@ h4 {
 }
 .cabecalho .social img:hover{
   transition: all 1s;
-  height: 43px;
+  height: 45px;
 }
 /* --------------------- BARRA DE MENU ------------------*/
 #barra-de-menu {  
@@ -213,18 +214,23 @@ ul#menu{
   .cabecalho .social img:hover{
       height: 33px;
   }
+  .social{
+      margin-top: 140px;
+      padding-top: 5px;
+  }
 }
 @media (max-width: 460px){
   .bkgsuperior{
     height: 8rem;
     display: block;
-}
+  }
 
   .titulo{
     height: 3rem;
-}
+  }
   .titulo h1{
       font-size: 26px;
+      margin-top: 25px;
       float: none;
   }
   .titulo h4{

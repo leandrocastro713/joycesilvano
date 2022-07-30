@@ -11,7 +11,6 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     width: 95%;
-    overflow: hidden;
 }
 .grid img:hover{
     transition: ease-in-out 300ms;
@@ -23,7 +22,6 @@
     justify-content: center;
     margin: 0 auto;
     width: 400px;
-
 }
 .sidebar{
     margin: 0 auto;
