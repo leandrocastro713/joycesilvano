@@ -2,25 +2,39 @@
 * {
     box-sizing: border-box;
 }
-.corpo{
+.hide{
+    transition: ease-in-out 500ms;
+    display: none;
+}
+.grid{
+    /* border: 1px solid green; */
     margin: 0 auto;
     padding: auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
     display: grid;
-    grid-template-columns: 450px 450px ;
-    width: 90%;
+    grid-template-columns: 200px 1fr ;
+    width: 98%;
+}
+.choose{
+    width: 170px;
+}
+
+.container{
+    /* border: 1px solid black; */
+    display: flex;
+    width: 100%  ;
+    flex-wrap: wrap;
 }
 .produto{
     padding: .5rem;
     font-family: fonteH4;
     border: 1px solid rgb(118, 117, 118);
     border-radius: 4px;
-    display: block;
     margin: 1rem;
-    margin-bottom: 1rem;
     text-align: center;
-    width: 400px;
+    width: 380px;
+    max-height: 260px;
 }
 .produto img{
     position: relative;
@@ -29,12 +43,15 @@
     width: 180px;
 }
 .marca{
-    width: 170px;
+    padding: 1rem;
+    display: block;
+    width: 200px;
 }
 .marca img{
     width: 150px;
 }
 .textoProduto{
+        /* border: 1px solid black; */
     margin-top: 0px;
     padding-left: 0px;
     padding-bottom: 0px;
@@ -43,21 +60,23 @@
     flex-direction: column;
     float: right;
     text-decoration: none;
-    width: 190px;
+    width: 170px;
     align-items: left;
     text-align: left;
     color: rgb(6, 69, 13);
 }
 .descricao{
     margin-bottom: 0px;
+    margin-top: 5px;
+    padding-right: 4px;
     padding-bottom: 0px;
     color: rgb(6, 17, 69);
     font-weight: 600;
     display: block;
-    width: 200px;
+    width: 180px;
     font-family: fonteH4;
     font-size: 16px;
-    margin-top: 0px;
+    
     padding-top: 0px;
 }
 .preco{
@@ -69,7 +88,7 @@
     font-size: 20px;
     margin-top: 0px;
     padding-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
 }
 .btn-quero{
     position:relative;
@@ -88,6 +107,11 @@
     color:rgb(33, 33, 31);
 }
 /*---------------------- MEDIA QUERY --------------------*/
+@media (max-width: 1058px){
+    .grid{
+        width: 600px;
+    }
+}
 @media (max-width: 910px){
     .corpo{
         display: grid;
@@ -97,40 +121,79 @@
         width: 95vw;
     }
     .produto{
-        display: block;
         border-radius: 8px;
         align-items: center;
-        margin: 1rem auto;
+        margin: 1rem;
     }
+}
+@media (max-width: 600px){
+    .grid{
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        width: 98%;
+    }
+    .choose{
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 98%;
+    }
+    .container{
+        width: 98%;
+        position: relative;
+        justify-content: center;
+        margin: 0 auto;
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+    }
+    .descricao{
+        padding-right: 15px;
+    }
+
 }
 @media (max-width: 470px){
    .textos{
        margin-bottom: 1rem;
    }
    .produto{
-        width: 280px;
-   }
-   .produto img{
         position: relative;
-        display: block;
-        float: left;
-        width: 190px;
-        margin-bottom: 2rem;
-    }
-    .textoProduto{
-        margin-top: 1rem;
-        width: 300px;
-        float: left;
-    }
+        justify-content: center;
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        width: 98%;
+        max-height: none;
+        max-width: none;
+   }
+   .textoProduto{
+        padding-left: 8px;
+        /* padding-bottom: 2px; */
+        position: relative;
+        display: flex;
+        text-decoration: none;
+        width: 90%;
+        align-items: left;
+        text-align: left;
+        margin: 1rem;
+        color: rgb(6, 69, 13);
+    }   
+
     .produto a img{
         width: 250px;
         margin: 0 auto;
-        display: block;
+        display: flex;
         position: relative;
         float: none;
     }
     .preco{
-        margin-right: 50px;
+        width: 100%;
+        display: block;
+        float: right;
+        position: relative;
+        margin-right: 8px;
     }
     .btn-quero{
         margin: 0 auto;
@@ -145,8 +208,5 @@
     .titulo h1{
         font-size: 28px;
         float: none;
-    }
-    .preco{
-        margin-right: 30px;
     }
 }

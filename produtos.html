@@ -7,7 +7,7 @@
     <title>Joyce Silvano - Cabelos Livres</title>
     <link rel="stylesheet" type="text/css" href="./css/produtos.css"/>
     <link rel="stylesheet" type="text/css" href="./css/estilo.css"/>
-    
+    <script src ="./js/produtos.js" defer></script>
 </head>
 <body>
 <!-- SUPERIOR -->
@@ -39,12 +39,179 @@
             <li><a href="./contato.html">Contato</a></li>
         </ul>
     </nav>
-<!-- PARTE 1-->
-    <main class="corpo">
+<!----------------------------------------------- PARTE 1-->
+    <main class="grid">
+
+        <aside class="choose">
+            <a class = "marca" href="#abela">    
+                <img src="./imagens/abela.png" onclick="filtro_abela()">     
+            </a>
+            <a class = "marca" href="#anazoe">    
+                <img src="./imagens/anazoe.png"
+                onclick="filtro_anazoe()"> 
+            </a>
+            <a class = "marca" href="#aneethun">    
+                <img src="./imagens/anneethum.png"
+                onclick="filtro_aneethun()">    
+            </a>
+            <a class = "marca" href="#apse">    
+                <img src="./imagens/apse.png"
+                onclick="filtro_apse()">     
+            </a>
+            <a class = "marca" href="#arvensis">    
+                <img src="./imagens/arvensis.png"
+                onclick="filtro_arvensis()">     
+            </a>
+            <a class = "marca" href="#curlycare">    
+                <img src="./imagens/curlycare.png"
+                onclick="filtro_curlycare()">     
+            </a>
+            <a class = "marca" href="#widicare">    
+                <img src="./imagens/widicare.png" onclick="filtro_widi()">     
+            </a>
+            <a class = "marca" href="#acessorios">    
+                <img src="./imagens/acessorios.png" onclick="filtro_acessorios()">     
+            </a>
+            <a class = "marca" href="#todos">    
+                <img src="./imagens/todos.png" onclick="filtro_todos()">     
+            </a>
+
+        </aside>
+<!-------------------------------------------- container -->
+        <div class="container">
         
-        <div class="produto">
-            <a href="./produtos/produto01.jpg" target="_blank">
-                <img src="./produtos/produto01.jpg">
+            <div class="produto abela">
+                <a href="./produtos/abela01.jpg" target="_blank">
+                    <img src="./produtos/abela01.jpg">
+                </a>
+                <div class="textoProduto">
+                    <p class="descricao">
+                        Acidificante capilar
+                    </p>
+                    <p class="preco">
+                        R$ 20,00
+                    </p>
+                </div>
+            </div>
+
+            <div class="produto abela">
+                <a href="./produtos/abela02.jpg" target="_blank">
+                    <img src="./produtos/abela02.jpg">
+                </a>
+                <div class="textoProduto">
+                    <p class="descricao">
+                        Néctar modelador
+                    </p>
+                    <p class="preco">
+                        R$ 100,00
+                    </p>
+                    <p class="descricao">
+                        Day after
+                    </p>
+                    <p class="preco">
+                        R$ 150,00
+                    </p>
+                </div>
+            </div>
+
+            <div class="produto abela">
+                <a href="./produtos/abela03.jpg" target="_blank">
+                    <img src="./produtos/abela03.jpg">
+                </a>
+                <div class="textoProduto">
+                    <p class="descricao">
+                        Magic Butter
+                    </p>
+                    <p class="preco">
+                        R$ 800,00
+                    </p>
+                    <p class="descricao">
+                        Máscara umectante
+                    </p>
+                    <p class="preco">
+                        R$ 8,00
+                    </p>
+                </div>
+            </div>
+            
+            <div class="produto abela">
+                <a href="./produtos/abela04.jpg" target="_blank">
+                    <img src="./produtos/abela04.jpg">
+                </a>
+                <div class="textoProduto">
+                    <p class="descricao">
+                        Gel finalizador
+                    </p>
+                    <p class="preco">
+                        R$ 50,00
+                    </p>
+                </div>
+            </div>
+            
+            <div class="produto abela">
+                <a href="./produtos/abela05.jpg" target="_blank">
+                    <img src="./produtos/abela05.jpg">
+                </a>
+                <div class="textoProduto">
+                    <p class="descricao">
+                        Love Vegan Shampoo
+                    </p>
+                    <p class="preco">
+                        R$ 15,00
+                    </p>
+                    <p class="descricao">
+                        Love Vegan Condicionador
+                    </p>
+                    <p class="preco">
+                        R$ 25,00
+                    </p>
+                </div>
+            </div>
+            
+            <div class="produto abela">
+                <a href="./produtos/abela06.jpg" target="_blank">
+                    <img src="./produtos/abela06.jpg">
+                </a>
+                <div class="textoProduto">
+                    <p class="descricao">
+                        The Buzz Reparação
+                    </p>
+                    <p class="preco">
+                        R$ 100,00
+                    </p>
+                </div>
+            </div>
+
+            <div class="produto abela">
+                <a href="./produtos/abela07.jpg" target="_blank">
+                    <img src="./produtos/abela07.jpg">
+                </a>
+                <div class="textoProduto">
+                    <p class="descricao">
+                        Love Vegan Shampoo
+                    </p>
+                    <p class="preco">
+                        R$ 10,00
+                    </p>
+                    <p class="descricao">
+                        Love Vegan Condicionador
+                    </p>
+                    <p class="preco">
+                        R$ 10,00
+                    </p>
+                    <p class="descricao">
+                        Love Vegan Máscara de tratamento
+                    </p>
+                    <p class="preco">
+                        R$ 10,00
+                    </p>
+                </div>
+            </div>
+
+            <div class="produto abela">
+                <a href="./produtos/abela08.jpg" target="_blank">
+                    <img src="./produtos/abela08.jpg">
+                </a>
                 <div class="textoProduto">
                     <p class="descricao">
                         Linha Widi Cuidados
@@ -53,155 +220,464 @@
                         R$ 1.500,00
                     </p>
                 </div>
-            </a>
+            </div>
 
-        </div>
-
-        <div class="produto">
-            <a href="./produtos/produto02.jpg" target="_blank">
-                <img src="./produtos/produto02.jpg">
+<!---------------------------------------------- anazoe  -->
+            <div class="produto anazoe">
+                <a href="./produtos/anazoe01.jpg" target="_blank">
+                    <img src="./produtos/anazoe01.jpg">
+                </a>
                 <div class="textoProduto">
                     <p class="descricao">
-                        Máscaras Widi Care <br> <br>
-                    </p> 
-                    <p class = descricao>
-                        Hidratação
+                        Linha Widi Cuidados
                     </p>
                     <p class="preco">
-                        R$ 100,00
-                    </p>
-                    <p class="descricao">
-                        Nutrição
-                    </p>
-                    <p class="preco">
-                        R$ 200,00
-                    </p>
-                    <p class="descricao">
-                        Reconstrução 
-                    </p>
-                    <p class="preco">
-                        R$ 300,00
+                        R$ 1.500,00
                     </p>
                 </div>
-            </a> <br>
-            <img src="./imagens/btn-quero.png" class="btn-quero">
-        </div>
+            </div>
 
-        <div class="produto">
-            <a href="./produtos/produto03.jpg" target="_blank">
-                <img src="./produtos/produto03.jpg">
+            <div class="produto anazoe">
+                <a href="./produtos/anazoe02.jpg" target="_blank">
+                    <img src="./produtos/anazoe02.jpg">
+                </a>
                 <div class="textoProduto">
                     <p class="descricao">
-                        Cremes Widi Care
+                        Linha Widi Cuidados
                     </p>
                     <p class="preco">
-                        R$ 800,00
+                        R$ 1.500,00
                     </p>
                 </div>
-            </a>
-
-        </div>
-
-        <div class="produto">
-            <a href="./produtos/produto04.jpg" target="_blank">
-                <img src="./produtos/produto04.jpg">
+            </div>
+<!--------------------------------------------- aneethun  -->
+            <div class="produto aneethun">
+                <a href="./produtos/aneethum01.jpg" target="_blank">
+                    <img src="./produtos/aneethum01.jpg">
+                </a>
                 <div class="textoProduto">
                     <p class="descricao">
-                        Cremes Widi Care
+                        Linha Widi Cuidados
                     </p>
                     <p class="preco">
-                        R$ 800,00
+                        R$ 1.500,00
                     </p>
                 </div>
-            </a>
+            </div>
 
-        </div>
-
-        <div class="produto">
-            <a href="./produtos/produto05.jpg" target="_blank">
-                <img src="./produtos/produto05.jpg">
+            <div class="produto aneethun">
+                <a href="./produtos/aneethum02.jpg" target="_blank">
+                    <img src="./produtos/aneethum02.jpg">
+                </a>
                 <div class="textoProduto">
                     <p class="descricao">
-                        Cremes Widi Care
+                        Linha Widi Cuidados
                     </p>
                     <p class="preco">
-                        R$ 800,00
+                        R$ 1.500,00
                     </p>
                 </div>
-            </a>
-
-        </div>
-        <div class="produto">
-            <a href="./produtos/produto06.jpg" target="_blank">
-                <img src="./produtos/produto06.jpg">
+            </div>
+<!------------------------------------------------ apse  -->
+            <div class="produto apse">
+                <a href="./produtos/apse01.jpg" target="_blank">
+                    <img src="./produtos/apse01.jpg">
+                </a>
                 <div class="textoProduto">
                     <p class="descricao">
-                        Cremes Widi Care
+                        Linha Apse Cuidados
                     </p>
                     <p class="preco">
-                        R$ 800,00
+                        R$ 1.500,00
                     </p>
                 </div>
-            </a>
+            </div>
 
-        </div>
-        <div class="produto">
-            <a href="./produtos/produto07.jpg" target="_blank">
-                <img src="./produtos/produto07.jpg">
+            <div class="produto apse">
+                <a href="./produtos/apse02.jpg" target="_blank">
+                    <img src="./produtos/apse02.jpg">
+                </a>
                 <div class="textoProduto">
                     <p class="descricao">
-                        Cremes Widi Care
+                        Linha Widi Cuidados
                     </p>
                     <p class="preco">
-                        R$ 800,00
+                        R$ 1.500,00
                     </p>
                 </div>
-            </a>
+            </div>
 
-        </div>
-        <div class="produto">
-            <a href="./produtos/produto08.jpg" target="_blank">
-                <img src="./produtos/produto08.jpg">
+            <div class="produto apse">
+                <a href="./produtos/apse03.jpg" target="_blank">
+                    <img src="./produtos/apse03.jpg">
+                </a>
                 <div class="textoProduto">
                     <p class="descricao">
-                        Cremes Widi Care
+                        Linha Widi Cuidados
                     </p>
                     <p class="preco">
-                        R$ 800,00
+                        R$ 1.500,00
                     </p>
                 </div>
-            </a>
+            </div>
 
-        </div>
-        <div class="produto">
-            <a href="./produtos/produto09.jpg" target="_blank">
-                <img src="./produtos/produto09.jpg">
+            <div class="produto apse">
+                <a href="./produtos/apse04.jpg" target="_blank">
+                    <img src="./produtos/apse04.jpg">
+                </a>
                 <div class="textoProduto">
                     <p class="descricao">
-                        Cremes Widi Care
+                        Linha Widi Cuidados
                     </p>
                     <p class="preco">
-                        R$ 800,00
+                        R$ 1.500,00
                     </p>
                 </div>
-            </a>
-
-        </div>
-        <div class="produto">
-            <a href="./produtos/produto10.jpg" target="_blank">
-                <img src="./produtos/produto10.jpg">
+            </div>
+<!--------------------------------------------- arvensis  -->
+            <div class="produto arvensis">
+                <a href="./produtos/arvensis01.jpg" target="_blank">
+                    <img src="./produtos/arvensis01.jpg">
+                </a>
                 <div class="textoProduto">
                     <p class="descricao">
-                        Cremes Widi Care
+                        Linha Widi Cuidados
                     </p>
                     <p class="preco">
-                        R$ 800,00
+                        R$ 1.500,00
                     </p>
                 </div>
-            </a>
+            </div>
+            
+            <div class="produto arvensis">
+                <a href="./produtos/arvensis02.jpg" target="_blank">
+                    <img src="./produtos/arvensis02.jpg">
+                </a>
+                <div class="textoProduto">
+                    <p class="descricao">
+                        Linha Widi Cuidados
+                    </p>
+                    <p class="preco">
+                        R$ 1.500,00
+                    </p>
+                </div>
+            </div>            
+            
+            <div class="produto arvensis">
+                <a href="./produtos/arvensis03.jpg" target="_blank">
+                    <img src="./produtos/arvensis03.jpg">
+                </a>
+                <div class="textoProduto">
+                    <p class="descricao">
+                        Linha Widi Cuidados
+                    </p>
+                    <p class="preco">
+                        R$ 1.500,00
+                    </p>
+                </div>
+            </div>            
+            
+            <div class="produto arvensis">
+                <a href="./produtos/arvensis04.jpg" target="_blank">
+                    <img src="./produtos/arvensis04.jpg">
+                </a>
+                <div class="textoProduto">
+                    <p class="descricao">
+                        Linha Widi Cuidados
+                    </p>
+                    <p class="preco">
+                        R$ 1.500,00
+                    </p>
+                </div>
+            </div>            
+            
+            <div class="produto arvensis">
+                <a href="./produtos/arvensis05.jpg" target="_blank">
+                    <img src="./produtos/arvensis05.jpg">
+                </a>
+                <div class="textoProduto">
+                    <p class="descricao">
+                        Linha Widi Cuidados
+                    </p>
+                    <p class="preco">
+                        R$ 1.500,00
+                    </p>
+                </div>
+            </div>            
+            
+            <div class="produto arvensis">
+                <a href="./produtos/arvensis06.jpg" target="_blank">
+                    <img src="./produtos/arvensis06.jpg">
+                </a>
+                <div class="textoProduto">
+                    <p class="descricao">
+                        Linha Widi Cuidados
+                    </p>
+                    <p class="preco">
+                        R$ 1.500,00
+                    </p>
+                </div>
+            </div>
+<!--------------------------------------------- curlycare -->
+            <div class="produto curlycare">
+                <a href="./produtos/curlycare01.jpg" target="_blank">
+                    <img src="./produtos/curlycare01.jpg">
+                </a>
+                <div class="textoProduto">
+                    <p class="descricao">
+                        Linha Widi Cuidados
+                    </p>
+                    <p class="preco">
+                        R$ 1.500,00
+                    </p>
+                </div>
+            </div>
 
+            <div class="produto curlycare">
+                <a href="./produtos/curlycare02.jpg" target="_blank">
+                    <img src="./produtos/curlycare02.jpg">
+                </a>
+                <div class="textoProduto">
+                    <p class="descricao">
+                        Linha Widi Cuidados
+                    </p>
+                    <p class="preco">
+                        R$ 1.500,00
+                    </p>
+                </div>
+            </div>
+
+            <div class="produto curlycare">
+                <a href="./produtos/curlycare03.jpg" target="_blank">
+                    <img src="./produtos/curlycare03.jpg">
+                </a>
+                <div class="textoProduto">
+                    <p class="descricao">
+                        Linha Widi Cuidados
+                    </p>
+                    <p class="preco">
+                        R$ 1.500,00
+                    </p>
+                </div>
+            </div>
+<!--------------------------------------------- widicare  -->
+            <div class="produto widi">
+                <a href="./produtos/widi01.jpg" target="_blank">
+                    <img src="./produtos/widi01.jpg">
+                    <div class="textoProduto">
+                        <p class="descricao">
+                            Linha Widi Cuidados
+                        </p>
+                        <p class="preco">
+                            R$ 1.500,00
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="produto widi">
+                <a href="./produtos/widi02.jpg" target="_blank">
+                    <img src="./produtos/widi02.jpg">
+                    <div class="textoProduto">
+                        <p class="descricao">
+                            Linha Widi Cuidados
+                        </p>
+                        <p class="preco">
+                            R$ 1.500,00
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="produto widi">
+                <a href="./produtos/widi03.jpg" target="_blank">
+                    <img src="./produtos/widi03.jpg">
+                    <div class="textoProduto">
+                        <p class="descricao">
+                            Linha Widi Cuidados
+                        </p>
+                        <p class="preco">
+                            R$ 1.500,00
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="produto widi">
+                <a href="./produtos/widi04.jpg" target="_blank">
+                    <img src="./produtos/widi04.jpg">
+                    <div class="textoProduto">
+                        <p class="descricao">
+                            Linha Widi Cuidados
+                        </p>
+                        <p class="preco">
+                            R$ 1.500,00
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="produto widi">
+                <a href="./produtos/widi05.jpg" target="_blank">
+                    <img src="./produtos/widi05.jpg">
+                    <div class="textoProduto">
+                        <p class="descricao">
+                            Linha Widi Cuidados
+                        </p>
+                        <p class="preco">
+                            R$ 1.500,00
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="produto widi">
+                <a href="./produtos/widi06.jpg" target="_blank">
+                    <img src="./produtos/widi06.jpg">
+                    <div class="textoProduto">
+                        <p class="descricao">
+                            Linha Widi Cuidados
+                        </p>
+                        <p class="preco">
+                            R$ 1.500,00
+                        </p>
+                    </div>
+                </a>
+            </div>
+<!-------------------------------------------- acessorios -->
+            <div class="produto acessorios">
+                <a href="./produtos/acessorios01.jpg" target="_blank">
+                    <img src="./produtos/acessorios01.jpg">
+                    <div class="textoProduto">
+                        <p class="descricao">
+                            Linha Widi Cuidados
+                        </p>
+                        <p class="preco">
+                            R$ 1.500,00
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="produto acessorios">
+                <a href="./produtos/acessorios02.jpg" target="_blank">
+                    <img src="./produtos/acessorios02.jpg">
+                    <div class="textoProduto">
+                        <p class="descricao">
+                            Linha Widi Cuidados
+                        </p>
+                        <p class="preco">
+                            R$ 1.500,00
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="produto acessorios">
+                <a href="./produtos/acessorios03.jpg" target="_blank">
+                    <img src="./produtos/acessorios03.jpg">
+                    <div class="textoProduto">
+                        <p class="descricao">
+                            Linha Widi Cuidados
+                        </p>
+                        <p class="preco">
+                            R$ 1.500,00
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="produto acessorios">
+                <a href="./produtos/acessorios04.jpg" target="_blank">
+                    <img src="./produtos/acessorios04.jpg">
+                    <div class="textoProduto">
+                        <p class="descricao">
+                            Linha Widi Cuidados
+                        </p>
+                        <p class="preco">
+                            R$ 1.500,00
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="produto acessorios">
+                <a href="./produtos/acessorios05.jpg" target="_blank">
+                    <img src="./produtos/acessorios05.jpg">
+                    <div class="textoProduto">
+                        <p class="descricao">
+                            Linha Widi Cuidados
+                        </p>
+                        <p class="preco">
+                            R$ 1.500,00
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="produto acessorios">
+                <a href="./produtos/acessorios06.jpg" target="_blank">
+                    <img src="./produtos/acessorios06.jpg">
+                    <div class="textoProduto">
+                        <p class="descricao">
+                            Linha Widi Cuidados
+                        </p>
+                        <p class="preco">
+                            R$ 1.500,00
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="produto acessorios">
+                <a href="./produtos/acessorios07.jpg" target="_blank">
+                    <img src="./produtos/acessorios07.jpg">
+                    <div class="textoProduto">
+                        <p class="descricao">
+                            Linha Widi Cuidados
+                        </p>
+                        <p class="preco">
+                            R$ 1.500,00
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="produto acessorios">
+                <a href="./produtos/acessorios08.jpg" target="_blank">
+                    <img src="./produtos/acessorios08.jpg">
+                    <div class="textoProduto">
+                        <p class="descricao">
+                            Linha Widi Cuidados
+                        </p>
+                        <p class="preco">
+                            R$ 1.500,00
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="produto acessorios">
+                <a href="./produtos/acessorios09.jpg" target="_blank">
+                    <img src="./produtos/acessorios09.jpg">
+                    <div class="textoProduto">
+                        <p class="descricao">
+                            Linha Widi Cuidados
+                        </p>
+                        <p class="preco">
+                            R$ 1.500,00
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="produto acessorios">
+                <a href="./produtos/acessorios10.jpg" target="_blank">
+                    <img src="./produtos/acessorios10.jpg">
+                    <div class="textoProduto">
+                        <p class="descricao">
+                            Linha Widi Cuidados
+                        </p>
+                        <p class="preco">
+                            R$ 1.500,00
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+
+
+
+        
         </div>
-
+    
     </main>
 
 <!-- RODAPE DA PAGINA-->
