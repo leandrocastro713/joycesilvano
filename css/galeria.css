@@ -14,8 +14,8 @@
 }
 .imagem{
     transition: all 500ms;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     padding: 0px;
     margin: 6px;
     cursor: pointer;
@@ -24,8 +24,8 @@
     transition: ease-in-out 200ms;
     transform: scale(1.1);
     filter: sepia(50);
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     margin: -5px;
 }
 #modal_img{
@@ -33,7 +33,7 @@
     position: relative;
     text-align: center;
     align-items: center;
-    width: 75vh;
+    height: 100%;
 }
 .modal{
     width: 100vw;
@@ -50,8 +50,9 @@
 }
 .modal_content{
     transition: all 1s;
-    display:block;
+    display: block;
     position: relative;
+    width: 100%; height: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -87,14 +88,15 @@
         min-width: 320px;
         grid-template-columns: 1fr;
     }
+    #modal_img{
+        width: 98%;  
+        height: auto;
+    }
+
 }
-@media (max-width: 320px){
+@media (max-width: 370px){
     .titulo2{
         font-size: 20px;
-    }
-    #modal_img{
-        width: 98%;
-        vertical-align: center;
     }
     #bt_close{
         right: 15px;
@@ -103,8 +105,6 @@
         border: none;
         padding: 0px;
         width: 90%;
-        grid-gap: 6px;
-        margin-left: -10px;
-        padding: 0px;
+        margin: 0 auto;
     }
 }

@@ -11,7 +11,7 @@ body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 
                'Trebuchet MS', sans-serif;
   color: rgb(22, 82, 92);
-  background-color: rgb(210, 127, 193);
+  background-color: rgb(238, 156, 222);
   /* background-color: rgb(68, 43, 92); */
   text-align: center;
   align-items: center;
@@ -27,11 +27,11 @@ h4 {
 .bkgsuperior{
   height: 6rem;
   background-image: url("../imagens/bkg1.png");
-  background-blend-mode: hard-light;
+  background-blend-mode: saturation;
   background-clip: padding-box;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-color: rgb(210, 127, 193);
+  background-color: rgb(238, 156, 222);
   /* background-color: rgb(130, 68, 170); */
   border-radius: 0px 0px 20px 20px;
   box-shadow: 2px 4px rgba(0,0,0,0.2);
@@ -58,13 +58,14 @@ h4 {
   text-align: right;
   margin-top: -40px;
 }
-.cabecalho .social{
+.social{
   width: 146px;
   align-items: center;
   align-items: right;
   display: block;
   float: right;    
-  margin-top: 30px;
+  position: relative;
+  margin-top: 35px;
 }
 .cabecalho .social img{
   height: 40px;
@@ -72,13 +73,13 @@ h4 {
 }
 .cabecalho .social img:hover{
   transition: all 1s;
-  height: 43px;
+  height: 45px;
 }
 /* --------------------- BARRA DE MENU ------------------*/
 #barra-de-menu {  
   margin-top: 10px;
   display: block;
-  background-color: rgb(142, 86, 131);
+  background-color: rgb(202, 115, 185);
   /* background-color: rgb(75, 36, 108); */
   border-radius: 10px 40px;
   box-shadow: 2px 4px rgba(0,0,0,0.2);
@@ -104,11 +105,11 @@ h4 {
   background-image: url("../imagens/bkg2.png");
   background-blend-mode: multiply;
   background-clip: padding-box;
-  background-color: rgb(142, 86, 131);
+  background-color: rgb(238, 156, 222);
   /* background-color: rgb(104, 58, 141); */
 }
 #barra-de-menu a{
-  color:rgb(233, 231, 175);
+  color:rgb(55, 53, 15);
   font-family: fonteH4;
   font-weight: 100;
   transition: all 1000ms;
@@ -125,7 +126,7 @@ h4 {
   font-family: fonteH4;
   cursor: none;
   background-color: none;
-  color: rgb(165, 163, 163);
+  color: rgb(62, 61, 61);
 }
 .atual:hover{
   background-color: none;
@@ -144,13 +145,13 @@ ul#menu{
   color: rgb(8, 35, 35);
   font-size: larger;
   font-style: italic;
-  background-color: rgb(170, 93, 155);
+  background-color: rgb(207, 119, 190);
   /* background-color: rgb(101, 33, 166); */
 }
 .rodape a{
   color: rgb(8, 35, 35);
   text-decoration: none;
-  background-color: rgb(170, 93, 155);
+  background-color: rgb(207, 119, 190);
 }
 .rodape a:hover{
   padding: 0;
@@ -213,18 +214,23 @@ ul#menu{
   .cabecalho .social img:hover{
       height: 33px;
   }
+  .social{
+      margin-top: 140px;
+      padding-top: 5px;
+  }
 }
 @media (max-width: 460px){
   .bkgsuperior{
     height: 8rem;
     display: block;
-}
+  }
 
   .titulo{
     height: 3rem;
-}
+  }
   .titulo h1{
       font-size: 26px;
+      margin-top: 25px;
       float: none;
   }
   .titulo h4{
