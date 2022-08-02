@@ -2,6 +2,10 @@
 * {
     box-sizing: border-box;
 }
+body{
+    overflow-x: hidden;
+
+}
 .hide{
     transition: ease-in-out 500ms;
     display: none;
@@ -24,6 +28,7 @@
     /* border: 1px solid black; */
     display: flex;
     width: 100%  ;
+    height: fit-content;
     flex-wrap: wrap;
 }
 .produto{
@@ -106,7 +111,21 @@
     transition: ease-in-out 500ms;
     color:rgb(33, 33, 31);
 }
+#topo{
+    position: relative;
+    text-decoration: none;
+    display: block;
+    width: 100vw;
+    font-family: fonteH4;
+    justify-content: center;
+    margin: 1rem;
+}
 /*---------------------- MEDIA QUERY --------------------*/
+@media (max-width: 1480px){
+    .grid{
+        width: 1050px;
+    }
+}
 @media (max-width: 1058px){
     .grid{
         width: 600px;
@@ -158,6 +177,10 @@
    .textos{
        margin-bottom: 1rem;
    }
+   #topo{
+        margin: 1rem 0rem;
+        width: 98%;
+   }
    .produto{
         position: relative;
         justify-content: center;
@@ -187,6 +210,9 @@
         display: flex;
         position: relative;
         float: none;
+    }
+    .descricao{
+        width: 90%;
     }
     .preco{
         width: 100%;

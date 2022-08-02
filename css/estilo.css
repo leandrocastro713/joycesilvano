@@ -204,12 +204,14 @@ ul#menu{
       padding: 20px;
   }
   .rodape{
+      overflow-x: hidden;
       float: none;
       display: block;
       position: relative;
       margin: 0 auto;
       align-items: center;
-      width: 80%; 
+      width: 98%; 
+      border-radius: 6px;
  } 
   .cabecalho .social img:hover{
       height: 33px;
